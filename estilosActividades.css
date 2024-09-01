@@ -1,0 +1,168 @@
+* {
+
+    list-style: none;
+    
+}
+
+
+body {
+    background-color: #4d4d4d;
+}
+
+
+
+.palabrasNav {
+    font-size: 15px;
+}
+
+ /* HEADER-NAV */
+body {
+    /* padding-top: 80px; */
+    overflow-x: hidden;
+
+}
+
+nav{
+    background: #ffffff;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    /* margin: -80px; */
+    margin-left: 0px;
+    box-shadow: 0px 11px 23px -0px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
+    
+}
+.enlace{
+    position: absolute;
+    padding: 20px 50px;
+}
+.logo{
+    height: 50px;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: #000000;
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+li a.active, li a:hover {
+    background: #4E9F1D;
+    transition: .5s;
+}
+.checkbtn{
+    font-size: 30px;
+    color: #000000;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+section{
+    background: url(img/actividades.png) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: calc(100vh - 80px);
+}
+
+@media (max-width: 952px){
+    .enlace{
+        padding-left: 20px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #4E9F1D; /*Color de fondo menu responsivo*/
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    li a:hover, li a.active{
+        background: none;
+        color: #fff; /*Color Letra menu responsivo*/
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+}
+
+
+
+    /*TITULO*/
+
+.titulo {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(img/actividades.png);
+    background-size: cover;
+    background-position: center;
+    
+
+
+}
+
+
+
+
+
+.lorem {
+    padding-top: 50px ;
+}
+
+
+.div-actividades {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    
+}
+
+.img-btn {
+    width: 300px;
+    height: 360px;
+    border-radius: 10px;
+}
+
+.btn-actividades {
+    margin-left: 30px;
+    margin-right: 30px;
+    
+}

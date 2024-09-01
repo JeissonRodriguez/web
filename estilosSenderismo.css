@@ -1,0 +1,648 @@
+* {
+
+    list-style: none;
+    
+}
+
+
+.palabrasNav {
+    font-size: 15px;
+}
+
+ /* HEADER-NAV */
+body {
+    /* padding-top: 80px; */
+    overflow-x: hidden;
+
+}
+
+nav{
+    background: #ffffff;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    /* margin: -80px; */
+    margin-left: 0px;
+    box-shadow: 0px 11px 23px -0px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
+    
+}
+.enlace{
+    position: absolute;
+    padding: 20px 50px;
+}
+.logo{
+    height: 50px;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+    
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+    
+}
+nav ul li a{
+    color: #000000;
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+   
+}
+li a.active, li a:hover {
+    background: #4E9F1D;
+    transition: .5s;
+}
+.checkbtn{
+    font-size: 30px;
+    color: #000000;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+section{
+    /*background: url(actividades.png) no-repeat; IMAGEN DEL TITULO*/
+    background-size: cover;
+    background-position: center center;
+    height: calc(100vh - 80px);
+}
+
+
+
+
+
+
+/* Contenedor para centrar los elementos */
+.contenedor-categorias {
+    text-align: center; 
+    padding: 20px 0;
+    width: 100%;
+}
+
+/* Estilos para los labels */
+.contenedor-categorias label {
+    display: inline-block; 
+    margin: 10px 5px; 
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #e2e2e2;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+.contenedor-categorias label:hover {
+    background-color: #d1d1d1;
+}
+
+
+.contenedor-categorias input[type="radio"] {
+    display: none;
+}
+
+
+.contenedor-categorias input[type="radio"]:checked + label {
+    background-color: #4E9F1D;
+    color: #ffffff;
+}
+
+
+
+
+
+
+
+    /*piedra Rivero 1*/
+
+    .contenedor{
+        display: flex;
+        justify-content: center;
+        /* background-color: #F2F1EC;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        margin-left: 70px;
+        margin-right: 70px;
+        border-radius: 12px; */
+        margin-top: 40px;
+
+    
+    }
+    
+    .img-piedraRivero {
+        height: 470px;
+        width: 450px;
+        border-radius: 10px;
+    
+    }
+    
+    .contenedor1{
+        margin-left: 15px;
+    }
+    
+    .contenedor1-1 {
+        margin-left: 40px;
+        margin-right: 15px;
+    
+        width: 450px;   
+        
+    }
+    
+    .piedraRivero-titulo{
+        text-decoration: none;
+        color: #000;
+        font-size: 23px;
+    }
+    
+    .contenedor1-2 {
+        margin-top: 10px;
+    }
+
+    .contenedor1-3{
+        background-color: #77e035;
+        border-radius: 12px;
+        font-size: 15px;
+        color: #000;
+        padding: 5px;
+        width: 50%;
+        margin: auto;
+        margin-bottom: 5px;
+    }
+
+    
+    .piedraRivero-fecha {
+        color: #c94a00;
+    }
+    
+    .piedraRivero-ubicacion{
+        margin-top: 5px;
+    }
+    
+    .fa-location-dot{
+        margin-right: 5px;
+    }
+    
+    .piedraRivero-descripcion{
+        font-family: sans-serif;
+        margin-bottom: 18px;
+        margin-top: 18px;
+
+    }
+    
+
+
+
+    /*El manantial 2*/
+    
+    .img-manantial {
+        height: 470px;
+        width: 450px;
+        border-radius: 10px;
+    
+    }
+    
+    .contenedor2{
+        margin-left: 15px;
+    }
+    
+    .contenedor2-1 {
+        margin-left: 40px;
+        margin-right: 15px;
+    
+        width: 450px;   
+        
+    }
+    
+    .manantial-titulo{
+        text-decoration: none;
+        color: #000;
+        font-size: 23px;
+    }
+    
+    .contenedor2-2 {
+        margin-top: 10px;
+    }
+
+    .contenedor2-3{
+        background-color: #77e035;
+        border-radius: 12px;
+        font-size: 15px;
+        color: #000;
+        padding: 5px;
+        width: 50%;
+        margin: auto;
+        margin-bottom: 5px;
+    }
+    
+    
+    .manantial-fecha {
+        color: #00c93c;
+    }
+    
+    .manantial-ubicacion{
+        margin-top: 5px;
+    }
+    
+    .fa-location-dot{
+        margin-right: 5px;
+    }
+    
+    .manantial-descripcion{
+        font-family: sans-serif;
+        margin-bottom: 18px;
+        margin-top: 18px;
+    }
+    
+
+
+
+
+    /*El Ferrocarril 3*/
+
+    .img-ferrocarril {
+        height: 470px;
+        width: 450px;
+        border-radius: 10px;
+    
+    }
+    
+    .contenedor3{
+        margin-left: 15px;
+    }
+    
+    .contenedor3-1 {
+        margin-left: 40px;
+        margin-right: 15px;
+    
+        width: 450px;   
+        
+    }
+    
+    .ferrocarril-titulo{
+        text-decoration: none;
+        color: #000;
+        font-size: 23px;
+    }
+    
+    .contenedor3-2 {
+        margin-top: 10px;
+    }
+
+    .contenedor3-3{
+        background-color: #77e035;
+        border-radius: 12px;
+        font-size: 15px;
+        color: #000;
+        padding: 5px;
+        width: 50%;
+        margin: auto;
+        margin-bottom: 5px;
+    }
+    
+    
+    .ferrocarril-fecha {
+        color: #00c93c;
+    }
+    
+    .ferrocarril-ubicacion{
+        margin-top: 5px;
+    }
+    
+    .fa-location-dot{
+        margin-right: 5px;
+    }
+    
+    .ferrocarril-descripcion{
+        font-family: sans-serif;
+        margin-bottom: 18px;
+        margin-top: 18px;
+    }
+
+
+
+    /*El Cedro 4*/
+
+    .img-cedro {
+        height: 470px;
+        width: 450px;
+        border-radius: 10px;
+    
+    }
+    
+    .contenedor4{
+        margin-left: 15px;
+    }
+    
+    .contenedor4-1 {
+        margin-left: 40px;
+        margin-right: 15px;
+    
+        width: 450px;   
+        
+    }
+    
+    .cedro-titulo{
+        text-decoration: none;
+        color: #000;
+        font-size: 23px;
+    }
+    
+    .contenedor4-2 {
+        margin-top: 10px;
+    }
+
+    .contenedor4-3{
+        background-color: #77e035;
+        border-radius: 12px;
+        font-size: 15px;
+        color: #000;
+        padding: 5px;
+        width: 50%;
+        margin: auto;
+        margin-bottom: 5px;
+    }
+    
+    
+    .cedro-fecha {
+        color: #c94a00;
+    }
+    
+    .cedro-ubicacion{
+        margin-top: 5px;
+    }
+    
+    .fa-location-dot{
+        margin-right: 5px;
+    }
+    
+    .cedro-descripcion{
+        font-family: sans-serif;
+        margin-bottom: 18px;
+        margin-top: 18px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 952px){
+    .enlace{
+        padding-left: 20px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background: #4E9F1D; /* Color de fondo menu responsivo */
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    li a:hover, li a.active{
+        background: none;
+        color: #fff; /*Color Letra menu responsivo*/
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+
+
+
+/* Ajustes responsivos para pantallas pequeñas */
+@media (max-width: 768px) {
+    .contenedor-categorias label {
+        width: 80%; /* Ajuste para ocupar la mayoría del ancho en móviles */
+        font-size: 14px; /* Reducir el tamaño de la fuente en pantallas pequeñas */
+        padding: 8px 15px; /* Ajuste del padding para mejor adaptación */
+        margin: 5px 0; /* Reduce el margen para evitar espacio adicional */
+    }
+}
+
+@media (max-width: 480px) {
+    .contenedor-categorias label {
+        width: 50%; /* Ocupa todo el ancho en pantallas muy pequeñas */
+        font-size: 14px; /* Ajuste de tamaño de fuente */
+    }
+}
+
+    
+
+
+    /*piedra Rivero 1*/
+
+    .contenedor{
+        flex-wrap: wrap;
+        margin-left: 10px;
+        margin-right: 10px;
+        /* padding-left: 10px;
+        padding-right: 10px; */
+    }
+    
+    .img-acampada {
+        display: block;
+        margin: auto;
+        margin-bottom: 10px;
+    
+    }
+    
+    .contenedor1{
+        margin-left: 0px;
+    }
+    
+    .contenedor1-1 {
+        margin: auto;
+    }
+    
+    .piedraRivero-fecha {
+        text-align: center;
+    
+    }
+    
+    .piedraRivero-titulo1{
+        text-align: center;
+    
+    }
+
+
+    /*El manantial 2*/
+
+
+    .contenedor-2{
+        flex-wrap: wrap;
+        margin-left: 10px;
+        margin-right: 10px;
+        /* padding-left: 10px;
+        padding-right: 10px; */
+        
+    }
+    
+    .img-manantial {
+        display: block;
+        margin: auto;
+        margin-bottom: 10px;
+    
+    }
+    
+    .contenedor2{
+        margin-left: 0px;
+    }
+    
+    .contenedor2-1 {
+        margin: auto;
+    }
+    
+    .manantial-fecha {
+        text-align: center;
+    
+    }
+    
+    .manantial-titulo1{
+        text-align: center;
+    
+    }
+
+
+
+    /*El Ferrocarril 3*/
+
+
+    .contenedor-3{
+        flex-wrap: wrap;
+        margin-left: 10px;
+        margin-right: 10px;
+        
+    }
+    
+    .img-ferrocarril {
+        display: block;
+        margin: auto;
+        margin-bottom: 10px;
+    
+    }
+    
+    .contenedor3{
+        margin-left: 0px;
+    }
+    
+    .contenedor3-1 {
+        margin: auto;
+    }
+    
+    .ferrocarril-fecha {
+        text-align: center;
+    
+    }
+    
+    .ferrocarril-titulo1{
+        text-align: center;
+    
+    }
+
+
+
+    /*El Cedro 4*/
+
+
+    .contenedor-4{
+        flex-wrap: wrap;
+        margin-left: 10px;
+        margin-right: 10px;
+        
+    }
+    
+    .img-cedro {
+        display: block;
+        margin: auto;
+        margin-bottom: 10px;
+    
+    }
+    
+    .contenedor4{
+        margin-left: 0px;
+    }
+    
+    .contenedor4-1 {
+        margin: auto;
+    }
+    
+    .cedro-fecha {
+        text-align: center;
+    
+    }
+    
+    .cedro-titulo1{
+        text-align: center;
+    
+    }
+
+} /*OJO */
+
+
+
+
+
+
+
+
+#facil:checked ~ #contenedor0 .moderada, #facil:checked ~ #contenedor0 .avanzada{
+    display: none;
+}
+
+#moderada:checked ~ #contenedor0 .avanzada, #moderada:checked ~ #contenedor0 .facil{
+    display: none;
+}
+
+#avanzada:checked ~ #contenedor0 .facil, #avanzada:checked ~ #contenedor0 .moderada{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
