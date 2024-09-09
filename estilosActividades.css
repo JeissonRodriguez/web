@@ -5,28 +5,6 @@
 }
 
 
-
-.titulo {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: url(img/actividades.png);
-    background-size: cover;
-    background-position: center;
-
-}
-
-.titulo-texto {
-    color: #fff;
-    text-align: center;
-    width: 50%;
-    height: 40%;
-}
-
-
-
 .palabrasNav {
     font-size: 15px;
 }
@@ -88,12 +66,13 @@ li a.active, li a:hover {
 #check{
     display: none;
 }
-section{
-    /* background: url(img/actividades.png) no-repeat;
+
+/* section{
+    background: url(img/actividades.png) no-repeat;
     background-size: cover;
     background-position: center center;
-    height: calc(100vh - 80px); */
-}
+    height: calc(100vh - 80px); 
+} */
 
 @media (max-width: 952px){
     .enlace{
@@ -140,24 +119,25 @@ section{
     /*TITULO*/
 
 .titulo {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: url(img/actividades.png);
-    background-size: cover;
-    background-position: center;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: url(img/actividades.png);
+        background-size: cover;
+        background-position: center;
     
-}
+    }
+    
+    .titulo-texto {
+        color: #fff;
+        text-align: center;
+        width: 50%;
+        height: 40%;
+    }
+    
 
-
-
-
-
-.lorem {
-    padding-top: 50px ;
-}
 
 
 .div-actividades {

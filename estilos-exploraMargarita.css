@@ -1,0 +1,549 @@
+* {
+
+    list-style: none;
+    
+    /* galeria */
+    
+    box-sizing: border-box;
+}
+
+
+.palabrasNav {
+    font-size: 15px;
+}
+
+ /* HEADER-NAV */
+body {
+    /* padding-top: 80px; */
+    overflow-x: hidden;
+    /* background-color: #F0F0F0; */
+
+/* background-color: #6F7474; */
+    background-color: #F8F8F8;
+
+}
+
+nav{
+    background: #ffffff;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    /* margin: -80px; */
+    margin-left: 0px;
+    box-shadow: 0px 11px 23px -0px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
+    z-index: 100;
+    
+}
+.enlace{
+    position: absolute;
+    padding: 20px 50px;
+}
+.logo{
+    height: 50px;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: #000000;
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+li a.active, li a:hover {
+    background: #4E9F1D;
+    transition: .5s;
+}
+.checkbtn{
+    font-size: 30px;
+    color: #000000;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+/* section{
+    background: url(img/actividades.png) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: calc(100vh - 80px); 
+} */
+
+@media (max-width: 952px){
+    .enlace{
+        padding-left: 20px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #4E9F1D; /*Color de fondo menu responsivo*/
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    li a:hover, li a.active{
+        background: none;
+        color: #fff; /*Color Letra menu responsivo*/
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+}
+
+
+/* SECTION */
+.titulo-principal {
+    text-align: center;
+    margin: 15px 10px ;
+
+}
+
+/* DESCRIPCCION */
+
+
+.contenedor-descripcion-explora {
+    
+    justify-content: center;
+    display: flex;
+    margin-top: 30px;
+}
+
+.contenedor-logo-explora {
+    text-align: center;
+    
+}
+
+.logo-explora  {
+    height: 380px;
+    width: 380px;
+    margin-left: 50px;
+}
+
+.descripcion-exporaMargarita {
+    width: 40%;
+    font-size: 23px;
+    margin-right: 50px;
+    color: #6F7474;
+}
+
+.p-descripcion-exporaMargarita {
+    font-family: serif;
+}
+
+
+
+
+/* CALENDARIO */
+
+.titulo-NuestrasActividades {
+    margin-top: 50px;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+.contenedor-img-calendario-0 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.img-calendario-0 {
+    height: 477px;
+    width: 525px;
+
+}
+
+
+/* FECHA DE LOS CALENDARIOS */
+
+
+.contenedor-fechas {
+    width: 100%;
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+
+
+}
+
+.carta-perfil-fecha{
+    padding: 7px;
+    box-shadow: 1px 1px 5px rgb(201, 201, 201);
+    border: solid rgba(3, 133, 255, 0) 2px;
+    border-radius: 10px;   
+    background-color: #fff;
+}
+
+
+.img-fechas{
+    width: 420px;
+    height: 465px;
+    border-radius: 7px;
+}
+
+
+.carta-nombre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.fechas-button {
+    margin-top: 20px;
+    margin-bottom: 4px;
+    text-align: center;
+
+}
+
+.fechas-enlace {
+    background: #4E9F1D;
+    padding: 8px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 7px;
+}
+
+
+/* GALERIA */
+
+.titulo-galeria {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+
+.gallery a{
+    height: 250px;
+    width: 350px;
+    margin: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 3px 5px #000; 
+    
+}
+
+.gallery a img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+transition: all .2s linear;
+}
+.gallery a img:hover{
+    transform: scale(1.4);
+    z-index: 0;
+
+}
+
+
+/* TESTIMONIOS */
+
+.titulo-testimonio {
+    text-align: center;
+    margin-top: 70px;
+    padding-top: 0px;
+}
+
+
+
+.wrapper {
+
+    min-height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'releway', sans-serif;
+    color: #fff;
+}
+
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+    margin: 0 auto;
+    color: #000;
+}
+
+.card {
+    width: 500px;
+    height: 260px;
+    border-radius: 15px;
+    margin: 7px;
+    padding: 20px 30px;
+    position: relative;
+    background: rgb(255, 255, 255, 0.2);
+    box-shadow: 10px 20px 25px rgb(0, 0, 0, 0.2);
+    transition: 0.5s;
+
+}
+
+.card img{
+    width: 90px;
+    height: 90px;
+    border: 2px solid #f2f2f2;
+    border-radius: 50%;
+    position: absolute;
+    top: -40px;
+    left: 20px;
+
+
+
+}
+
+.card p {
+    font-size: 16px;
+    margin-top: 40px;
+    margin-bottom: 25px;
+}
+
+
+.card h2 {
+    font-weight: 500;
+    margin-bottom: 7px;
+}
+
+
+.card i {
+    font-size: 60px;
+    position: absolute;
+    bottom: 20px;
+    right: 25px;
+    color: #b2bec3;
+}
+
+.testimonio-nombre-3 {
+    padding-top: 74px;
+}
+
+.testimonio-nombre-2 {
+    padding-top: 56px;
+}
+
+@media (min-width: 670px) {
+    .card:hover {
+        transform: scale(1.4);
+        color: #333;
+        background: #fff;
+        z-index: 50;
+    }
+}
+
+
+
+@media (max-width: 1220px) {
+    .cards {
+        width: 100%;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        margin: 40px 0;
+    }
+
+    .testimonio-nombre-1 {
+        padding-top: 18px;
+    }
+    .testimonio-comas-1 {
+        padding-bottom: 20px;
+    }
+
+    .testimonio-comas-2 {
+        padding-bottom: 20px;
+    }
+
+    .testimonio-comas-3 {
+        padding-bottom: 20px;
+    }
+}
+
+@media (max-width: 538px) {
+    .cards {
+        width: 100%;
+        flex-direction: column;
+        flex-wrap: wrap;
+        
+    }
+
+    .card {
+        margin: 40px 0;
+        width: 270px;
+        height: 400px;
+    }
+
+
+    .testimonio-nombre-3 {
+        padding-top: 64px;
+    }
+    .testimonio-comas-3 {
+        padding-bottom: 22px;
+    }
+    .testimonio-3 {
+        height: 275px;
+    }
+
+
+    .testimonio-nombre-2 {
+        padding-top: 56px;
+    }
+    .testimonio-comas-2 {
+        padding-bottom: 25px;
+    }
+    .testimonio-2 {
+        height: 310px;
+    }
+
+
+
+    .testimonio-nombre-1 {
+        padding-top: 56px;
+    }
+    .testimonio-comas-1 {
+        padding-bottom: 30px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 800px){
+    .contenedor-img {
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 10px;
+        grid-template-rows: 305px;
+    }    
+
+    .contenedor-img .caja-img img {
+        height: 300px;  
+    }
+
+    .contenedor-img {
+        margin-bottom: 10px;
+        
+    }    
+
+
+}
+
+
+
+@media (max-width: 858px){
+
+    /* DESCRIPCCION */
+
+    .contenedor-descripcion-explora {
+        display: inline-block;
+    }
+    
+    .descripcion-exporaMargarita {
+        width: 90%; 
+        margin: auto;
+    }
+
+    .contenedor-logo-explora {
+        margin-top: 20px;
+    }
+
+    .logo-explora {
+        margin: auto;
+    }
+
+    /* CALENDARIO */
+
+    .contenedor-img-calendario-0 {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

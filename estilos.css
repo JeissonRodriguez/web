@@ -67,13 +67,14 @@ li a.active, li a:hover {
 #check{
     display: none;
 }
-section{
-    /* background: url(img/ancha2.png) no-repeat;
+
+/* section{
+    background: url(img/ancha2.png) no-repeat;
     background-size: cover;
     background-position: center center;
-    height: calc(100vh - 80px); */
-    /* margin-bottom: 200px; */
-}
+    height: calc(100vh - 80px); 
+    margin-bottom: 200px; 
+} */
 
 @media (max-width: 952px){
     .enlace{
@@ -219,10 +220,10 @@ hr{
     margin: 20px 5px;
 }
 .hr-linea {
-    margin-top: 57px;
+    margin-top: 75px;
 }
 .hr-linea-kayak {
-    margin-top: 94px;
+    margin-top: 149px;
 }
 .carta-button{
     text-align: center;
