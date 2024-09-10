@@ -292,7 +292,7 @@ transition: all .2s linear;
 
 
 
-.wrapper {
+.wrapper-testimonio {
 
     min-height: 100vh;
     margin: 0 auto;
@@ -305,7 +305,7 @@ transition: all .2s linear;
 }
 
 
-.cards {
+.cards-testimonio {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -314,7 +314,7 @@ transition: all .2s linear;
     color: #000;
 }
 
-.card {
+.card-testimonio {
     width: 500px;
     height: 260px;
     border-radius: 15px;
@@ -327,7 +327,7 @@ transition: all .2s linear;
 
 }
 
-.card img{
+.card-testimonio img{
     width: 90px;
     height: 90px;
     border: 2px solid #f2f2f2;
@@ -340,20 +340,20 @@ transition: all .2s linear;
 
 }
 
-.card p {
+.card-testimonio p {
     font-size: 16px;
     margin-top: 40px;
     margin-bottom: 25px;
 }
 
 
-.card h2 {
+.card-testimonio h2 {
     font-weight: 500;
     margin-bottom: 7px;
 }
 
 
-.card i {
+.card-testimonio i {
     font-size: 60px;
     position: absolute;
     bottom: 20px;
@@ -369,8 +369,62 @@ transition: all .2s linear;
     padding-top: 56px;
 }
 
+
+/* ALIADOS */
+
+.titulo-aliados {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 50px;
+    
+}
+
+.slider {
+    width: 80vw;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider .slide-track {
+    display: flex;
+    animation: scroll 120s linear infinite;
+    -webkit-animation: scroll 120s linear infinite;
+    width: calc(200px * 96);
+}
+
+.slider .slide {
+    width: 200px;
+}
+
+.slider .slide img {
+    width: 100%;
+}
+
+@keyframes scroll {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100% {
+        -webkit-transform: translateX(calc(-200px * 48));
+        transform: translateX(calc(-200px * 48));
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* TESTIMONIO */
 @media (min-width: 670px) {
-    .card:hover {
+    .card-testimonio:hover {
         transform: scale(1.4);
         color: #333;
         background: #fff;
@@ -381,13 +435,13 @@ transition: all .2s linear;
 
 
 @media (max-width: 1220px) {
-    .cards {
+    .cards-testimonio {
         width: 100%;
         flex-direction: column;
         flex-wrap: wrap;
     }
 
-    .card {
+    .card-testimonio {
         margin: 40px 0;
     }
 
@@ -408,14 +462,14 @@ transition: all .2s linear;
 }
 
 @media (max-width: 538px) {
-    .cards {
+    .cards-testimonio {
         width: 100%;
         flex-direction: column;
         flex-wrap: wrap;
         
     }
 
-    .card {
+    .card-testimonio {
         margin: 40px 0;
         width: 270px;
         height: 400px;
@@ -443,8 +497,6 @@ transition: all .2s linear;
         height: 310px;
     }
 
-
-
     .testimonio-nombre-1 {
         padding-top: 56px;
     }
@@ -453,17 +505,6 @@ transition: all .2s linear;
     }
 
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 @media screen and (max-width: 800px){
