@@ -343,7 +343,7 @@ footer{
     width: 100%;
     min-height: 350px;
     padding: 3rem 1rem;
-    z-index: -1;
+    margin-top: 40px;
 }
 .contenedor-footer {
    max-width: 1140px;
@@ -352,7 +352,6 @@ footer{
    justify-content: center;
    align-items: center;
    flex-direction: column;
-   font-family: 'popins', sans-serif;
 
 
 }
